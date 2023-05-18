@@ -23,6 +23,7 @@ const App = () => {
   const reloadGame = () => {
     setIsCross(false);
     setWinMessage("");
+    setBgColor("#ffffff")
     itemArray.fill("empty", 0, 9);
   };
 
