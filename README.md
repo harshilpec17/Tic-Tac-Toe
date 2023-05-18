@@ -14,6 +14,8 @@ This is a simple implementation of the `tic-tac-toe` game with the following fea
 
 - `Draw Message`: If the game ends in a draw (no player wins), a draw message is displayed on the user interface. This message indicates that the game resulted in a tie or draw.
 
+- `Toastify Message`: If there is any error, Toastify message were displayed in the game
+
 - `Dynamic Icon Display`: The user interface dynamically displays the `Circle` and `Cross` icons based on the player's moves. This means that as players take turns and make their moves on the game board, the appropriate icon (circle or cross) is displayed in the corresponding cell.
 
 - `Responsive Design`: The game incorporates a responsive design, which means that it is designed to adapt and provide an optimal user experience across different devices and screen sizes. This ensures that the game is playable and visually appealing on various devices, including desktop computers, tablets, and mobile phones.
