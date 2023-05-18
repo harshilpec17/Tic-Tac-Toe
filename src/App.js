@@ -87,6 +87,11 @@ const App = () => {
     }
     checkIsWinner();
   };
+
+  const click = () => {
+    return "text-warning"
+  }
+
   return (
     <Container className="p-5">
       <ToastContainer position="bottom-center" />
@@ -111,7 +116,7 @@ const App = () => {
           <div className="grid">
             {itemArray.map((item, index) => {
               return (
-                <Card onClick={() => changeItem(index)}>
+                <Card className="card"onClick={() => {changeItem(index); click()}} >
                   <CardBody className="box">
                     <Icon names={item} />
                   </CardBody>
