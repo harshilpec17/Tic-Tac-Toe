@@ -13,6 +13,12 @@ const itemArray = new Array(9).fill("empty");
 const App = () => {
   const [isCross, setIsCross] = useState(false);
   const [winMessage, setWinMessage] = useState("");
+  const [bgColor, setBgColor] = useState("");
+
+  const changeColor = () => {
+    let bgColor = Math.floor(Math.random() * 16777215).toString(16);
+    setBgColor("#" + bgColor);
+  };
 
   const reloadGame = () => {
     setIsCross(false);
@@ -88,10 +94,6 @@ const App = () => {
     checkIsWinner();
   };
 
-  const click = () => {
-    return "text-warning"
-  }
-
   return (
     <Container className="p-5">
       <ToastContainer position="bottom-center" />
@@ -109,14 +111,21 @@ const App = () => {
             </div>
           ) : (
             <h1 className="text-center text-success mb-3">
-              {isCross ? "cross" : "circle"} turns
+              {isCross ? "Cross" : "Circle"} Turns
             </h1>
           )}
 
           <div className="grid">
             {itemArray.map((item, index) => {
               return (
-                <Card className="card"onClick={() => {changeItem(index); click()}} >
+                <Card
+                  className="card"
+                  style={{ backgroundColor: bgColor }}
+                  onClick={() => {
+                    changeItem(index);
+                    changeColor();
+                  }}
+                >
                   <CardBody className="box">
                     <Icon names={item} />
                   </CardBody>

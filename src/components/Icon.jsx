@@ -2,7 +2,6 @@ import React from "react";
 import { FaTimes,FaRegGrinAlt,  FaRegCircle } from "react-icons/fa";
 
 
-
 const Icon = ({ names }) => {
   switch (names) {
     case "circle":
@@ -10,7 +9,7 @@ const Icon = ({ names }) => {
     case "cross":
       return <FaTimes className="icons" />;
     default:
-      return <FaRegGrinAlt className="icons" />;
+      return <FaRegGrinAlt className="smileIcon" />;
   }
 };
 

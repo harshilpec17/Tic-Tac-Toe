@@ -16,12 +16,11 @@ body {
   align-items: center;
 }
 
-.icon {
+.icons {
   font-size: 35px;
-  color: #ffffff;
 }
 
-.card:hover {
-  background-color: #3B71CA;
+.smileIcon{
+  font-size: 35px;
 }
 
