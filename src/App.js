@@ -23,7 +23,7 @@ const App = () => {
   const reloadGame = () => {
     setIsCross(false);
     setWinMessage("");
-    setBgColor("#ffffff")
+    setBgColor("#ffffff");
     itemArray.fill("empty", 0, 9);
   };
 
@@ -33,51 +33,51 @@ const App = () => {
       itemArray[0] === itemArray[2] &&
       itemArray[0] !== "empty"
     ) {
-      setWinMessage(`${itemArray[0]} Won`);
+      setWinMessage(`Player ${itemArray[0]} Won !`);
     } else if (
       itemArray[3] === itemArray[4] &&
       itemArray[3] === itemArray[5] &&
       itemArray[3] !== "empty"
     ) {
-      setWinMessage(`${itemArray[3]} Won`);
+      setWinMessage(`Player ${itemArray[3]} Won !`);
     } else if (
       itemArray[6] === itemArray[7] &&
       itemArray[6] === itemArray[8] &&
       itemArray[6] !== "empty"
     ) {
-      setWinMessage(`${itemArray[6]} Won`);
+      setWinMessage(`Player ${itemArray[6]} Won !`);
     } else if (
       itemArray[0] === itemArray[3] &&
       itemArray[0] === itemArray[6] &&
       itemArray[0] !== "empty"
     ) {
-      setWinMessage(`${itemArray[0]} Won`);
+      setWinMessage(`Player ${itemArray[0]} Won !`);
     } else if (
       itemArray[1] === itemArray[4] &&
       itemArray[1] === itemArray[7] &&
       itemArray[1] !== "empty"
     ) {
-      setWinMessage(`${itemArray[1]} Won`);
+      setWinMessage(`Player ${itemArray[1]} Won !`);
     } else if (
       itemArray[2] === itemArray[5] &&
       itemArray[2] === itemArray[8] &&
       itemArray[2] !== "empty"
     ) {
-      setWinMessage(`${itemArray[2]} Won`);
+      setWinMessage(`Player ${itemArray[2]} Won !`);
     } else if (
       itemArray[0] === itemArray[4] &&
       itemArray[0] === itemArray[8] &&
       itemArray[0] !== "empty"
     ) {
-      setWinMessage(`${itemArray[0]} Won`);
+      setWinMessage(`Player ${itemArray[0]} Won !`);
     } else if (
       itemArray[2] === itemArray[4] &&
       itemArray[2] === itemArray[6] &&
       itemArray[2] !== "empty"
     ) {
-      setWinMessage(`${itemArray[2]} Won`);
+      setWinMessage(`Player ${itemArray[2]} Won !`);
     } else if (itemArray.every((item) => item !== "empty")) {
-      setWinMessage("Nobody Wins");
+      setWinMessage("Nobody Wins !!");
     }
   };
 
